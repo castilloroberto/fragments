@@ -6,24 +6,27 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-   <Button
-       android:layout_margin="10dp"
-       android:layout_alignParentLeft="true"
-       android:id="@+id/btn_one"
-       android:text="Fragmentr one"
-       android:layout_width="wrap_content"
-       android:layout_height="wrap_content"/>
     <Button
-        android:layout_margin="10dp"
-        android:layout_alignParentRight="true"
-        android:id="@+id/btn_two"
-        android:text="Fragmentr two"
+        android:id="@+id/btn_one"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="10dp"
+        android:text="Fragmentr one" />
+
+    <Button
+        android:id="@+id/btn_two"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_margin="10dp"
+        android:text="Fragmentr two" />
+
     <fragment
-        android:layout_below="@+id/btn_one"
         android:id="@+id/fragment_main"
+        android:name="com.example.fragments.FirstFragment"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="match_parent"
+        android:layout_below="@+id/btn_one" />
 
 </RelativeLayout>
