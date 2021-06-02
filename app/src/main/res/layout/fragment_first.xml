@@ -5,13 +5,10 @@
     android:layout_height="match_parent"
     tools:context=".FirstFragment">
 
-    <TextView
-        android:id="@+id/tv_fragment1"
+
+    <ListView
+        android:id="@+id/list_view1"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:text="Primer Fragmento"
-        android:textSize="30dp"
-        android:textStyle="bold" />
+        android:layout_height="wrap_content"/>
 
 </RelativeLayout>

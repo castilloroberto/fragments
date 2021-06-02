@@ -6,27 +6,21 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/btn_one"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_margin="10dp"
-        android:text="Fragmentr one" />
 
-    <Button
+    <FrameLayout
+        android:layout_above="@+id/btn_two"
+        android:id="@+id/fragment_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/btn_two"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
-        android:layout_margin="10dp"
-        android:text="Fragmentr two" />
-
-    <fragment
-        android:id="@+id/fragment_main"
-        android:name="com.example.fragments.FirstFragment"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_below="@+id/btn_one" />
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="16dp"
+        android:src="@drawable/ic_arrow"
+        android:contentDescription="abre fragmento 2" />
 
 </RelativeLayout>
